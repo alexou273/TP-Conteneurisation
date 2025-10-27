@@ -11,6 +11,9 @@
 
 - Installer Docker et Docker-Compose sur votre machine local si vous ne l'avez pas déjà 
 - Lancer `docker run hello-world` pour vérifier que votre installation fonctionne bien
+- Installer l'outil `ctop` (top like pour docker)
+- Installer l'outil `lazydocker` (interface TUI pour docker)
+- Installer l'outil `docker-slim` (outil d'optimisation d'image docker)
 
 ## Partie 1 : Docker et Docker-compose the simple way
 
@@ -41,6 +44,10 @@
 - Publier votre image sur Dockerhub 
 
 --> À compléter : Fournir URL de l'image sur Dockerhub
+
+- Optimiser la taille de votre image avec docker-slim et la publier sur Dockerhub
+
+--> À compléter : Fournir URL de l'image slim sur Dockerhub et la taille avant/après optimisation
 
 - Modifier votre fichier docker-compose pour que votre app utilise l'image Dockerhub
 
@@ -131,16 +138,26 @@ Certaines sont vielles, mal documentés, incompréhensibles, c'est volontaire !
    ![alt text](image.png)
 
 
-- Servir l'App Hello world grace à Traefik et à l'URL : *votreURLdeVPS*/p4.
+- Servir l'App Hello world grace à Traefik et à l'URL : p4.*votreURLdeVPS*.
     - L'app doit fonctionner en HTTPS
 
 - Séparer votre fichier `docker-compose.yml` afin d'avoir un mode DEV utilisable en local sans Traefik et un mode PROD fonctionnant sans Traefik
     - Le passage de l'un à l'autre se fera en changeant la variable COMPOSE_FILE de votre `.env`
     - Dev : mapping de port autorisé,
-    - Prod : utilisation de traefik sans mapping de port (à part pour Traefik lui même)
+    - Prod : utilisation de Traefik sans mapping de port (à part pour Traefik lui même)
 
 - Fournissez dans `P4` le ou les fichiers compose finaux.    
 
+
+## Partie 5 : Évaluation par les pairs
+
+- Mixer les binômes
+- Évaluer les travaux des autres binômes sur les critères suivants :
+   - Fonctionnalité : Est-ce que l'application fonctionne correctement en local et sur le VPS
+   - Qualité des Dockerfile : Est-ce que les images sont optimisées, sécurisées, maintenables
+   - Qualité des fichiers docker-compose : Est-ce que les fichiers sont clairs, bien structurés, sécurisés
+   - Documentation : Est-ce que les travaux sont bien documentés, clairs et compréhensibles
+   - Commentaires supplémentaires : [Ajouter des commentaires ou suggestions pour améliorer le travail évalué]
 
 ## Conclusion
 
