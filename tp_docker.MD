@@ -30,9 +30,8 @@ git push -u origin main
 
 - Installer `docker` et `docker-compose` sur votre machine locale si vous ne l'avez pas déjà
 - Lancer `docker run hello-world` pour vérifier que votre installation fonctionne bien
-- Installer l'outil `ctop` (top like pour docker)
-- Installer l'outil `lazydocker` (interface TUI pour docker)
-- Installer l'outil `docker-slim` (outil d'optimisation d'image docker) 
+- FACULTATIF : Installer l'outil `ctop` (top like pour docker)
+- FACULTATIF : Installer l'outil `lazydocker` (interface TUI pour docker)
 
 
 ## Partie 0bis : installation du VPS
