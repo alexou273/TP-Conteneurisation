@@ -49,9 +49,9 @@ export async function getPool(): Promise<Pool> {
     }
 
     if (!connected) {
-      console.error('Unable to establish database connection after 3 attempts');
+      console.error(`Unable to establish database connection after ${MAX_ATTEMPTS} attempts`);
       await pool.end();
-      throw new Error('Unable to establish database connection after 3 attempts');
+      throw new Error(`Unable to establish database connection after ${MAX_ATTEMPTS} attempts`);
     } else {
       console.log('Database connection established');
     }
