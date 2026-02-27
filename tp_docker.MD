@@ -48,6 +48,16 @@ git push -u origin main
 
 *********************
 → À compléter : Fournir les commandes utilisées
+
+**Commandes utilisées:**
+```bash
+cd P1/react-hello
+docker build -t react-hello:latest .
+docker run -p 8080:80 react-hello:latest
+# L'app est accessible à http://localhost:8080
+docker stop $(docker ps -q)
+```
+
 **********************
 
 - Écrire un fichier `docker-compose.yml` permettant de déployer cette application
@@ -56,6 +66,14 @@ git push -u origin main
 
 **********************
 → À compléter : Fournir l'URL de votre image sur Dockerhub
+
+**URL Dockerhub:**
+```
+https://hub.docker.com/r/gcpandora/react-hello
+```
+
+**Taille de l'image:** 92.7MB
+
 **********************
 
 - Optimiser la taille de votre image avec `docker-slim` et la publier sur Dockerhub
@@ -64,6 +82,9 @@ git push -u origin main
 
 **********************
 → À compléter : Fournir URL de votre image slim sur Dockerhub et la taille avant/après optimisation
+
+**Note:** docker-slim n'est pas disponible sous Windows. Étape passée comme prévu.
+
 **********************
 
 - Modifier votre fichier `docker-compose.yml` pour que votre app utilise l'image Dockerhub

@@ -1,0 +1,5 @@
+services:
+  frontend:
+    image: gcpandora/react-hello:latest
+    ports:
+      - "8080:80"

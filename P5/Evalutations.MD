@@ -3,7 +3,7 @@
 Compléter la grille d'évaluation par les pairs sur les critères suivants :
 
 - Évaluateur : [Nom du binôme évaluateur]
-- Évalué : [Nom du binôme évalué]
+- Évalué : ALIZARD Alexandre, DABROWSKI Tom
 
 - Fonctionnalité : Est-ce que l'application fonctionne correctement en local et sur le VPS
 - Qualité des Dockerfile : Est-ce que les images sont optimisées, sécurisées, maintenables
