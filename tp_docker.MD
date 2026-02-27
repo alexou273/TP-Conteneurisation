@@ -83,7 +83,7 @@ https://hub.docker.com/r/gcpandora/react-hello
 **********************
 → À compléter : Fournir URL de votre image slim sur Dockerhub et la taille avant/après optimisation
 
-**Note:** docker-slim n'est pas disponible sous Windows. Étape passée comme prévu.
+**Note:** docker-slim n'est pas disponible sous Windows.
 
 **********************
 

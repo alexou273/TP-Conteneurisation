@@ -2,6 +2,7 @@
   "name": "nest-time-api",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite-node src/main.ts",
     "build": "vite build",
